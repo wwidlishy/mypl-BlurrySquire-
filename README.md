@@ -1,2 +1,2 @@
-# mypl
-My Programming Language
+# Programming Language
+VersionInfo = MAJOR.MINOR.PATCH
