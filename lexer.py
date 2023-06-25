@@ -11,7 +11,7 @@ class Token():
 class Lexer():
     def __init__(self):
         self.tokens = []
-        self.pos = 1
+        self.pos = 0
         self.input_text = ''
         self.error = None
         self.keyword = ''
@@ -45,10 +45,11 @@ class Lexer():
         self.keyword = ''
 
         while True:
-            self.advance()
 
             self.keyword += str(self.current_char())
 
             if self.keyword == 'println':
                 self.tokens.append(Token(TokenTypes.PRINT))
                 break
+                
+            self.advance()

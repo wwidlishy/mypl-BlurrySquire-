@@ -1,6 +1,6 @@
 class TokenTypes():
     def __init__(self):
-        self.NEWLINE = 'MEW_LINE'
+        self.NEWLINE = 'NEW_LINE'
 
         self.L_BRACK = 'L_BRACKET'
         self.R_BRACK = 'R_BRACK'
